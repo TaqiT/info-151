@@ -7,7 +7,29 @@
 #communication{
     text-align: center;
 
-    p{
-        margin: 24px 0px 48px;
+    #communication-content{
+        @include helpers.lg{
+            width: 992px;
+            margin: 0 auto;
+        }
+
+
+        p{
+            margin: 24px 0px 48px;
+    
+            @include helpers.md{
+                padding: 0 8vw;
+                margin-bottom: 24px;
+            }
+        }
     }
+
+    #communication-img{
+        @include helpers.xl{
+            width: 1200px;
+            margin: 0 auto;
+        }
+    }
+
+    
 }

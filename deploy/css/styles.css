@@ -546,12 +546,27 @@ textarea {
 #packages #top-content {
   text-align: center;
 }
+@media (min-width: 768px) {
+  #packages #top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 #packages #top-content #package-button-container {
   background-color: var(--white);
   margin: 24px 0;
   padding: 8px;
   border-radius: 10px;
   display: inline-block;
+}
+@media (min-width: 768px) {
+  #packages #top-content #package-button-container {
+    margin-left: auto;
+  }
 }
 #packages #top-content #package-button-container button {
   border: none;
